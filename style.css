@@ -4,7 +4,7 @@
 body { background: var(--black); color: var(--white); scroll-behavior: smooth; }
 
 /* Hero Section */
-.hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), url('halebidu.jpg') no-repeat center/cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), url('images/halebidu.jpg') no-repeat center/cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); }
 
 /* Grid Layout */
@@ -30,3 +30,4 @@ body { background: var(--black); color: var(--white); scroll-behavior: smooth; }
     .card { width: 90%; }
 
 }
+
