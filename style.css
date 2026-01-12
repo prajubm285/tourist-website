@@ -1,0 +1,31 @@
+:root { --gold: #D4AF37; --black: #0a0a0a; --white: #ffffff; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: var(--black); color: var(--white); scroll-behavior: smooth; }
+
+/* Hero Section */
+.hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), url('images/halebidu.jpg') no-repeat center/cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); }
+
+/* Grid Layout */
+.destinations { padding: 100px 20px; text-align: center; }
+.title { color: var(--gold); font-size: 2.5rem; margin-bottom: 50px; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+
+.card { width: 300px; height: 400px; position: relative; border-radius: 20px; overflow: hidden; border: 1px solid var(--gold); text-decoration: none; color: white; transition: 0.5s; }
+.card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.card:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--gold); }
+.card:hover img { filter: brightness(0.4); }
+
+.card-info { position: absolute; bottom: 20px; left: 20px; text-align: left; }
+.card-info h3 { font-size: 1.5rem; color: var(--gold); }
+
+/* Call to Action Button */
+.cta-btn { margin-top: 30px; padding: 15px 40px; border: 2px solid var(--gold); color: var(--gold); text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.4s; }
+.cta-btn:hover { background: var(--gold); color: black; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .card { width: 90%; }
+}
